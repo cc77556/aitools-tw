@@ -3,6 +3,9 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--card-border)] bg-[var(--card-bg)]">
+      <div className="bg-amber-50 dark:bg-amber-900/30 py-2 text-center text-xs text-amber-800 dark:text-amber-200">
+        📅 定價資料更新：2026-03-22 | AI 工具定價可能隨時變動，請以官網為準
+      </div>
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-4 text-center">
           <div className="flex items-center gap-2 text-lg font-bold">
