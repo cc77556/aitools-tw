@@ -1,0 +1,883 @@
+[
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "nameZh": "",
+    "category": "chatbot",
+    "icon": "🤖",
+    "description": "OpenAI 開發的對話式 AI，支援文字、圖片、程式碼生成，全球最多人使用的 AI 助手",
+    "features": ["多輪對話與上下文理解", "圖片生成（DALL-E 3）", "程式碼撰寫與除錯", "檔案上傳與分析", "GPT Store 自訂應用"],
+    "pricing": {
+      "free": true,
+      "freeTier": "GPT-4o mini 無限使用，GPT-4o 有限額度",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["GPT-4o mini 無限制", "GPT-4o 有限額度", "基本圖片生成"]},
+        {"name": "Plus", "priceUSD": 20, "priceTWD": 640, "period": "month", "features": ["GPT-4o 更高額度", "進階圖片生成", "進階語音模式", "建立自訂 GPTs"]},
+        {"name": "Pro", "priceUSD": 200, "priceTWD": 6400, "period": "month", "features": ["無限制 GPT-4o", "o1 pro 模式", "進階語音模式不限量", "最高優先存取"]}
+      ]
+    },
+    "url": "https://chat.openai.com",
+    "tags": ["對話", "通用", "寫作", "程式", "圖片"],
+    "useCases": ["適合：一般使用者日常問答", "適合：文字工作者撰寫內容", "適合：開發者寫程式與除錯"],
+    "rating": 4.7,
+    "reviewCount": 2850,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "claude",
+    "name": "Claude",
+    "nameZh": "",
+    "category": "chatbot",
+    "icon": "🟤",
+    "description": "Anthropic 開發的 AI 助手，擅長長文分析、邏輯推理與程式撰寫，注重安全與誠實",
+    "features": ["200K token 超長上下文", "文件與 PDF 深度分析", "精準邏輯推理", "程式碼生成與除錯", "Artifacts 即時預覽"],
+    "pricing": {
+      "free": true,
+      "freeTier": "Claude Sonnet 有限額度使用",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["Claude Sonnet 有限額度", "基本功能"]},
+        {"name": "Pro", "priceUSD": 20, "priceTWD": 640, "period": "month", "features": ["Claude Sonnet 更高額度", "Opus 存取", "專案功能", "優先存取"]},
+        {"name": "Max", "priceUSD": 100, "priceTWD": 3200, "period": "month", "features": ["大幅提升使用額度", "Claude Code 存取", "最高優先存取"]}
+      ]
+    },
+    "url": "https://claude.ai",
+    "tags": ["對話", "分析", "寫作", "程式", "長文"],
+    "useCases": ["適合：需要分析大量文件的研究者", "適合：重視回答品質的專業人士", "適合：程式開發者"],
+    "rating": 4.8,
+    "reviewCount": 1920,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "nameZh": "",
+    "category": "chatbot",
+    "icon": "✨",
+    "description": "Google 開發的多模態 AI，深度整合 Google 生態系，支援文字、圖片、影片理解",
+    "features": ["深度整合 Google 服務", "多模態理解（文字、圖片、影片）", "即時網路搜尋", "Gmail 與 Docs 整合", "Google Workspace 擴充"],
+    "pricing": {
+      "free": true,
+      "freeTier": "Gemini 基本版免費使用",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["Gemini 基本版", "基本多模態功能"]},
+        {"name": "Advanced", "priceUSD": 20, "priceTWD": 640, "period": "month", "features": ["Gemini Ultra 模型", "1TB Google 儲存空間", "Gmail 與 Docs 整合", "Notebook LM Plus"]}
+      ]
+    },
+    "url": "https://gemini.google.com",
+    "tags": ["對話", "Google", "多模態", "搜尋"],
+    "useCases": ["適合：重度 Google 生態系使用者", "適合：需要多模態分析的使用者", "適合：日常問答與搜尋"],
+    "rating": 4.4,
+    "reviewCount": 1650,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "copilot",
+    "name": "Microsoft Copilot",
+    "nameZh": "",
+    "category": "chatbot",
+    "icon": "🪟",
+    "description": "微軟 AI 助手，整合 Bing 搜尋與 Microsoft 365，提供即時網路資訊與生產力工具",
+    "features": ["Bing 即時搜尋整合", "圖片生成（Designer）", "Microsoft 365 整合", "GPT-4 驅動", "免費無限使用"],
+    "pricing": {
+      "free": true,
+      "freeTier": "基本 AI 對話與搜尋免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["GPT-4 對話", "圖片生成", "Bing 搜尋整合"]},
+        {"name": "Pro", "priceUSD": 20, "priceTWD": 640, "period": "month", "features": ["優先存取", "更快回應速度", "Office 365 深度整合", "更多圖片生成額度"]}
+      ]
+    },
+    "url": "https://copilot.microsoft.com",
+    "tags": ["對話", "搜尋", "Microsoft", "免費"],
+    "useCases": ["適合：Microsoft 365 使用者", "適合：需要免費 AI 對話的使用者", "適合：需要即時搜尋結果的人"],
+    "rating": 4.2,
+    "reviewCount": 1280,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity",
+    "nameZh": "",
+    "category": "chatbot",
+    "icon": "🔮",
+    "description": "AI 搜尋引擎，結合對話式 AI 與即時網路搜尋，每個回答附上來源引用",
+    "features": ["即時網路搜尋與引用", "多模型切換（GPT-4、Claude）", "學術搜尋模式", "檔案上傳分析", "Collections 整理功能"],
+    "pricing": {
+      "free": true,
+      "freeTier": "基本搜尋免費，每日有限 Pro 搜尋",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["無限基本搜尋", "每日 5 次 Pro 搜尋"]},
+        {"name": "Pro", "priceUSD": 20, "priceTWD": 640, "period": "month", "features": ["無限 Pro 搜尋", "多模型選擇", "檔案上傳", "API 額度"]}
+      ]
+    },
+    "url": "https://www.perplexity.ai",
+    "tags": ["搜尋", "研究", "引用", "學術"],
+    "useCases": ["適合：需要可靠資訊來源的研究者", "適合：學生做報告查資料", "適合：取代傳統搜尋引擎"],
+    "rating": 4.6,
+    "reviewCount": 1450,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "nameZh": "",
+    "category": "image",
+    "icon": "🖼️",
+    "description": "頂尖 AI 繪圖工具，以極高美學品質著稱，透過文字描述生成精美圖片",
+    "features": ["極高品質圖片生成", "多種風格與參數控制", "圖片混合與變體", "Zoom Out 擴展畫面", "高解析度放大"],
+    "pricing": {
+      "free": false,
+      "freeTier": "",
+      "plans": [
+        {"name": "Basic", "priceUSD": 10, "priceTWD": 320, "period": "month", "features": ["約 200 張圖片/月", "3 個同時任務"]},
+        {"name": "Standard", "priceUSD": 30, "priceTWD": 960, "period": "month", "features": ["15 小時快速生成", "無限放鬆模式", "隱身模式"]},
+        {"name": "Pro", "priceUSD": 60, "priceTWD": 1920, "period": "month", "features": ["30 小時快速生成", "無限放鬆模式", "12 個同時任務"]}
+      ]
+    },
+    "url": "https://www.midjourney.com",
+    "tags": ["繪圖", "設計", "美術", "創意"],
+    "useCases": ["適合：設計師與插畫家", "適合：社群媒體內容創作者", "適合：需要高品質視覺素材的行銷人員"],
+    "rating": 4.8,
+    "reviewCount": 2100,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "dall-e-3",
+    "name": "DALL-E 3",
+    "nameZh": "",
+    "category": "image",
+    "icon": "🎨",
+    "description": "OpenAI 圖片生成模型，內建於 ChatGPT，文字理解力強，能精準呈現複雜描述",
+    "features": ["精準理解文字描述", "內建於 ChatGPT 介面", "支援中文提示詞", "多種尺寸與風格", "對話式修改圖片"],
+    "pricing": {
+      "free": true,
+      "freeTier": "ChatGPT 免費版含有限圖片生成",
+      "plans": [
+        {"name": "Free（via ChatGPT）", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["有限圖片生成額度"]},
+        {"name": "Plus（via ChatGPT）", "priceUSD": 20, "priceTWD": 640, "period": "month", "features": ["更多圖片生成額度", "更快速度", "DALL-E 3 完整功能"]}
+      ]
+    },
+    "url": "https://openai.com/dall-e-3",
+    "tags": ["繪圖", "OpenAI", "ChatGPT 整合"],
+    "useCases": ["適合：已使用 ChatGPT 的使用者", "適合：需要快速生成插圖的內容創作者", "適合：中文使用者（提示詞支援佳）"],
+    "rating": 4.5,
+    "reviewCount": 1800,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "stable-diffusion",
+    "name": "Stable Diffusion",
+    "nameZh": "",
+    "category": "image",
+    "icon": "🌀",
+    "description": "開源 AI 繪圖模型，可在本機運行，社群模型豐富，客製化程度最高",
+    "features": ["完全開源免費", "本機運行無需聯網", "豐富的社群模型", "ControlNet 精準控制", "無限制圖片生成"],
+    "pricing": {
+      "free": true,
+      "freeTier": "開源免費，本機運行不限量",
+      "plans": [
+        {"name": "Open Source", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["完全免費", "本機運行", "無限生成"]},
+        {"name": "DreamStudio（雲端）", "priceUSD": 10, "priceTWD": 320, "period": "one-time", "features": ["1000 credits", "雲端運算", "無需 GPU"]}
+      ]
+    },
+    "url": "https://stability.ai",
+    "tags": ["繪圖", "開源", "免費", "自架"],
+    "useCases": ["適合：有 GPU 的技術使用者", "適合：需要大量生成圖片的創作者", "適合：想完全控制 AI 繪圖的進階用戶"],
+    "rating": 4.4,
+    "reviewCount": 1650,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "leonardo-ai",
+    "name": "Leonardo AI",
+    "nameZh": "",
+    "category": "image",
+    "icon": "🦁",
+    "description": "AI 圖片生成平台，內建多種模型，介面友善，特別適合遊戲與概念美術",
+    "features": ["多種預訓練模型", "圖片到圖片轉換", "AI Canvas 編輯器", "動態生成（Motion）", "即時生成預覽"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每日 150 tokens 免費使用",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["每日 150 tokens", "基本功能"]},
+        {"name": "Apprentice", "priceUSD": 12, "priceTWD": 384, "period": "month", "features": ["8500 tokens/月", "進階功能", "私人生成"]}
+      ]
+    },
+    "url": "https://leonardo.ai",
+    "tags": ["繪圖", "遊戲美術", "概念設計"],
+    "useCases": ["適合：遊戲開發者", "適合：概念美術設計師", "適合：想免費試用 AI 繪圖的新手"],
+    "rating": 4.3,
+    "reviewCount": 980,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "canva-ai",
+    "name": "Canva AI",
+    "nameZh": "",
+    "category": "image",
+    "icon": "🎪",
+    "description": "Canva 內建 AI 功能，一站式完成設計、繪圖、文案、簡報，操作最簡單",
+    "features": ["Magic Design 自動設計", "AI 圖片生成與編輯", "Magic Write 文案生成", "背景移除與替換", "Brand Kit 品牌管理"],
+    "pricing": {
+      "free": true,
+      "freeTier": "基本設計功能免費，AI 功能有限額度",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["基本設計功能", "有限 AI 額度"]},
+        {"name": "Pro", "priceUSD": 13, "priceTWD": 416, "period": "month", "features": ["無限 AI 功能", "億萬素材庫", "品牌套件", "背景移除"]}
+      ]
+    },
+    "url": "https://www.canva.com",
+    "tags": ["設計", "繪圖", "簡報", "社群"],
+    "useCases": ["適合：社群小編快速製圖", "適合：非設計背景的行銷人員", "適合：小型企業品牌設計"],
+    "rating": 4.6,
+    "reviewCount": 2300,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "jasper",
+    "name": "Jasper",
+    "nameZh": "",
+    "category": "writing",
+    "icon": "✏️",
+    "description": "企業級 AI 寫作平台，專為行銷團隊設計，支援品牌語調與多語言內容",
+    "features": ["品牌語調設定", "50+ 寫作模板", "SEO 優化建議", "團隊協作功能", "多語言內容生成"],
+    "pricing": {
+      "free": false,
+      "freeTier": "7 天免費試用",
+      "plans": [
+        {"name": "Creator", "priceUSD": 39, "priceTWD": 1248, "period": "month", "features": ["1 個品牌語調", "SEO 模式", "瀏覽器擴充"]},
+        {"name": "Pro", "priceUSD": 59, "priceTWD": 1888, "period": "month", "features": ["3 個品牌語調", "協作功能", "AI 圖片生成", "進階分析"]}
+      ]
+    },
+    "url": "https://www.jasper.ai",
+    "tags": ["寫作", "行銷", "SEO", "品牌"],
+    "useCases": ["適合：行銷團隊批量產出內容", "適合：需要維持品牌語調的企業", "適合：SEO 內容撰寫者"],
+    "rating": 4.3,
+    "reviewCount": 1120,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "copy-ai",
+    "name": "Copy.ai",
+    "nameZh": "",
+    "category": "writing",
+    "icon": "📝",
+    "description": "AI 文案生成工具，專注行銷文案與銷售內容，支援工作流程自動化",
+    "features": ["行銷文案模板", "銷售信件生成", "社群貼文批量產出", "工作流程自動化", "多語言支援"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每月 2000 字免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["每月 2000 字", "1 個使用者"]},
+        {"name": "Pro", "priceUSD": 49, "priceTWD": 1568, "period": "month", "features": ["無限字數", "5 個使用者", "工作流程自動化", "API 存取"]}
+      ]
+    },
+    "url": "https://www.copy.ai",
+    "tags": ["寫作", "文案", "行銷", "自動化"],
+    "useCases": ["適合：需要大量行銷文案的團隊", "適合：銷售團隊撰寫外展信件", "適合：社群媒體經營者"],
+    "rating": 4.2,
+    "reviewCount": 890,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "writesonic",
+    "name": "Writesonic",
+    "nameZh": "",
+    "category": "writing",
+    "icon": "🚀",
+    "description": "AI 寫作助手，支援部落格、廣告文案、產品描述，內建 SEO 工具與事實查核",
+    "features": ["部落格文章生成", "AI 事實查核", "SEO 優化工具", "多種文案模板", "品牌語調設定"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每月 10,000 字免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["每月 10,000 字", "基本功能"]},
+        {"name": "Pro", "priceUSD": 16, "priceTWD": 512, "period": "month", "features": ["無限字數", "進階 AI 模型", "事實查核", "SEO 工具"]}
+      ]
+    },
+    "url": "https://writesonic.com",
+    "tags": ["寫作", "部落格", "SEO", "文案"],
+    "useCases": ["適合：部落客與內容創作者", "適合：需要 SEO 文章的網站經營者", "適合：預算有限的個人創作者"],
+    "rating": 4.1,
+    "reviewCount": 760,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "notion-ai",
+    "name": "Notion AI",
+    "nameZh": "",
+    "category": "writing",
+    "icon": "📓",
+    "description": "Notion 內建 AI 助手，直接在筆記與文件中使用 AI 寫作、摘要、翻譯",
+    "features": ["文件內 AI 寫作與編輯", "自動摘要與重點整理", "翻譯與語調調整", "資料庫自動填入", "Q&A 知識庫搜尋"],
+    "pricing": {
+      "free": false,
+      "freeTier": "免費試用有限次數",
+      "plans": [
+        {"name": "AI Add-on", "priceUSD": 10, "priceTWD": 320, "period": "month", "features": ["無限 AI 使用", "所有 AI 功能", "需搭配 Notion 方案"]}
+      ]
+    },
+    "url": "https://www.notion.so/product/ai",
+    "tags": ["寫作", "筆記", "效率", "知識管理"],
+    "useCases": ["適合：Notion 既有使用者", "適合：需要整理大量筆記的知識工作者", "適合：團隊文件協作與知識庫"],
+    "rating": 4.4,
+    "reviewCount": 1350,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "grammarly",
+    "name": "Grammarly",
+    "nameZh": "",
+    "category": "writing",
+    "icon": "📗",
+    "description": "AI 英文寫作助手，即時修正文法、拼字、語調，支援全網頁覆蓋",
+    "features": ["即時文法與拼字檢查", "語調偵測與調整", "AI 改寫建議", "全網頁瀏覽器擴充", "多平台支援"],
+    "pricing": {
+      "free": true,
+      "freeTier": "基本文法與拼字檢查免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["基本文法檢查", "拼字校正", "語調偵測"]},
+        {"name": "Premium", "priceUSD": 12, "priceTWD": 384, "period": "month", "features": ["進階文法建議", "AI 改寫", "語調調整", "剽竊偵測"]}
+      ]
+    },
+    "url": "https://www.grammarly.com",
+    "tags": ["寫作", "英文", "文法", "校對"],
+    "useCases": ["適合：經常撰寫英文的工作者", "適合：英語學習者", "適合：需要專業英文文件的商務人士"],
+    "rating": 4.6,
+    "reviewCount": 2500,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "runway",
+    "name": "Runway",
+    "nameZh": "",
+    "category": "video",
+    "icon": "🎥",
+    "description": "頂尖 AI 影片生成工具，支援文字轉影片、圖片轉影片、影片編輯等多種功能",
+    "features": ["Gen-3 文字轉影片", "圖片轉影片動畫", "影片背景移除", "動態追蹤", "AI 影片編輯"],
+    "pricing": {
+      "free": true,
+      "freeTier": "125 credits 免費試用",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["125 credits", "3 個專案", "720p 匯出"]},
+        {"name": "Standard", "priceUSD": 12, "priceTWD": 384, "period": "month", "features": ["625 credits/月", "無限專案", "4K 匯出"]},
+        {"name": "Pro", "priceUSD": 28, "priceTWD": 896, "period": "month", "features": ["2250 credits/月", "無限專案", "4K 匯出", "自訂浮水印"]}
+      ]
+    },
+    "url": "https://runwayml.com",
+    "tags": ["影片", "生成", "編輯", "特效"],
+    "useCases": ["適合：影片創作者與導演", "適合：社群媒體短影片製作", "適合：廣告與行銷影片製作"],
+    "rating": 4.5,
+    "reviewCount": 1280,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "heygen",
+    "name": "HeyGen",
+    "nameZh": "",
+    "category": "video",
+    "icon": "🧑‍💼",
+    "description": "AI 虛擬人物影片平台，用文字腳本生成真人級說話影片，支援多語言配音",
+    "features": ["100+ 虛擬人物", "文字轉說話影片", "多語言口型同步", "自訂虛擬人物", "即時虛擬人物串流"],
+    "pricing": {
+      "free": true,
+      "freeTier": "1 分鐘免費試用影片",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["1 分鐘影片", "基本虛擬人物"]},
+        {"name": "Creator", "priceUSD": 24, "priceTWD": 768, "period": "month", "features": ["15 分鐘影片/月", "進階虛擬人物", "自訂品牌"]}
+      ]
+    },
+    "url": "https://www.heygen.com",
+    "tags": ["影片", "虛擬人物", "配音", "行銷"],
+    "useCases": ["適合：企業培訓影片製作", "適合：多語言行銷影片", "適合：不想露臉的 YouTuber"],
+    "rating": 4.4,
+    "reviewCount": 890,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "synthesia",
+    "name": "Synthesia",
+    "nameZh": "",
+    "category": "video",
+    "icon": "🎭",
+    "description": "企業級 AI 影片生成平台，專業虛擬人物搭配多語言配音，適合企業培訓與行銷",
+    "features": ["160+ 專業虛擬人物", "140+ 語言支援", "企業級安全性", "PowerPoint 匯入", "品牌客製化"],
+    "pricing": {
+      "free": false,
+      "freeTier": "免費試用一支影片",
+      "plans": [
+        {"name": "Starter", "priceUSD": 22, "priceTWD": 704, "period": "month", "features": ["10 分鐘影片/月", "70+ 虛擬人物", "基本品牌設定"]},
+        {"name": "Creator", "priceUSD": 67, "priceTWD": 2144, "period": "month", "features": ["30 分鐘影片/月", "所有虛擬人物", "自訂虛擬人物", "API 存取"]}
+      ]
+    },
+    "url": "https://www.synthesia.io",
+    "tags": ["影片", "虛擬人物", "企業", "培訓"],
+    "useCases": ["適合：企業培訓與內部溝通", "適合：多語言產品介紹影片", "適合：HR 與法遵教育訓練"],
+    "rating": 4.3,
+    "reviewCount": 750,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "descript",
+    "name": "Descript",
+    "nameZh": "",
+    "category": "video",
+    "icon": "📼",
+    "description": "AI 影音編輯工具，像編輯文件一樣編輯影片和 Podcast，自動產生字幕與逐字稿",
+    "features": ["文字編輯影片", "AI 語音克隆", "自動字幕與逐字稿", "去除口頭禪", "螢幕錄影"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每月 1 小時轉錄免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["1 小時轉錄/月", "基本編輯功能"]},
+        {"name": "Hobbyist", "priceUSD": 24, "priceTWD": 768, "period": "month", "features": ["10 小時轉錄/月", "AI 語音克隆", "去除口頭禪", "無浮水印"]}
+      ]
+    },
+    "url": "https://www.descript.com",
+    "tags": ["影片", "Podcast", "字幕", "編輯"],
+    "useCases": ["適合：Podcast 創作者", "適合：YouTuber 影片後製", "適合：需要快速上字幕的創作者"],
+    "rating": 4.4,
+    "reviewCount": 1050,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "capcut",
+    "name": "CapCut",
+    "nameZh": "剪映國際版",
+    "category": "video",
+    "icon": "✂️",
+    "description": "字節跳動推出的免費影片編輯工具，內建 AI 功能，特別適合社群短影片",
+    "features": ["AI 自動字幕", "AI 背景移除", "豐富轉場與特效", "文字轉語音", "社群模板庫"],
+    "pricing": {
+      "free": true,
+      "freeTier": "大部分功能免費使用",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["基本編輯功能", "AI 字幕", "部分特效"]},
+        {"name": "Pro", "priceUSD": 8, "priceTWD": 256, "period": "month", "features": ["所有進階特效", "雲端儲存 100GB", "無浮水印", "優先匯出"]}
+      ]
+    },
+    "url": "https://www.capcut.com",
+    "tags": ["影片", "剪輯", "短影片", "免費"],
+    "useCases": ["適合：TikTok / Reels 短影片創作者", "適合：影片剪輯入門者", "適合：需要免費編輯工具的學生"],
+    "rating": 4.5,
+    "reviewCount": 1800,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "nameZh": "",
+    "category": "audio",
+    "icon": "🗣️",
+    "description": "頂尖 AI 語音合成平台，生成極度逼真的人聲，支援語音克隆與多語言",
+    "features": ["超逼真語音合成", "語音克隆技術", "29+ 語言支援", "情感語調控制", "API 整合"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每月 10,000 字元免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["10,000 字元/月", "3 種自訂語音"]},
+        {"name": "Starter", "priceUSD": 5, "priceTWD": 160, "period": "month", "features": ["30,000 字元/月", "10 種自訂語音", "語音克隆"]},
+        {"name": "Creator", "priceUSD": 22, "priceTWD": 704, "period": "month", "features": ["100,000 字元/月", "30 種自訂語音", "專業語音克隆"]}
+      ]
+    },
+    "url": "https://elevenlabs.io",
+    "tags": ["語音", "配音", "克隆", "多語言"],
+    "useCases": ["適合：有聲書與 Podcast 製作", "適合：影片配音", "適合：多語言內容本地化"],
+    "rating": 4.7,
+    "reviewCount": 1350,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "suno",
+    "name": "Suno",
+    "nameZh": "",
+    "category": "audio",
+    "icon": "🎶",
+    "description": "AI 音樂生成平台，輸入文字描述即可生成完整歌曲，含人聲與伴奏",
+    "features": ["文字生成完整歌曲", "自訂歌詞與風格", "人聲與伴奏生成", "多種音樂風格", "歌曲延伸與混合"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每日 5 首歌曲免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["每日 5 首", "非商用"]},
+        {"name": "Pro", "priceUSD": 10, "priceTWD": 320, "period": "month", "features": ["500 首/月", "商用授權", "優先生成"]},
+        {"name": "Premier", "priceUSD": 30, "priceTWD": 960, "period": "month", "features": ["2000 首/月", "商用授權", "最高優先"]}
+      ]
+    },
+    "url": "https://suno.com",
+    "tags": ["音樂", "歌曲", "創作", "生成"],
+    "useCases": ["適合：音樂愛好者快速創作", "適合：影片背景音樂製作", "適合：社群內容配樂"],
+    "rating": 4.5,
+    "reviewCount": 980,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "otter-ai",
+    "name": "Otter.ai",
+    "nameZh": "",
+    "category": "audio",
+    "icon": "🦦",
+    "description": "AI 會議轉錄與摘要工具，即時產生逐字稿，自動整理重點與待辦事項",
+    "features": ["即時會議轉錄", "自動會議摘要", "待辦事項擷取", "Zoom / Teams / Meet 整合", "對話搜尋功能"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每月 300 分鐘免費轉錄",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["300 分鐘/月", "基本轉錄"]},
+        {"name": "Pro", "priceUSD": 17, "priceTWD": 544, "period": "month", "features": ["1200 分鐘/月", "進階摘要", "匯出功能", "自訂詞彙"]}
+      ]
+    },
+    "url": "https://otter.ai",
+    "tags": ["轉錄", "會議", "筆記", "效率"],
+    "useCases": ["適合：經常開會的專業人士", "適合：記者與訪談工作者", "適合：需要會議記錄的團隊"],
+    "rating": 4.3,
+    "reviewCount": 1100,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "murf-ai",
+    "name": "Murf AI",
+    "nameZh": "",
+    "category": "audio",
+    "icon": "🎙️",
+    "description": "AI 配音平台，提供 120+ 專業語音，適合企業簡報、教育影片、廣告配音",
+    "features": ["120+ 專業 AI 語音", "20+ 語言支援", "語調與速度控制", "影片配音整合", "團隊協作功能"],
+    "pricing": {
+      "free": true,
+      "freeTier": "10 分鐘免費試用",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["10 分鐘生成", "基本語音"]},
+        {"name": "Creator", "priceUSD": 26, "priceTWD": 832, "period": "month", "features": ["2 小時/月", "所有語音", "商用授權", "無浮水印"]}
+      ]
+    },
+    "url": "https://murf.ai",
+    "tags": ["配音", "語音", "企業", "教育"],
+    "useCases": ["適合：企業培訓影片配音", "適合：線上課程製作者", "適合：廣告與行銷影片配音"],
+    "rating": 4.2,
+    "reviewCount": 680,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "nameZh": "",
+    "category": "coding",
+    "icon": "🐙",
+    "description": "GitHub 推出的 AI 程式助手，在編輯器中即時建議程式碼，支援多種語言與框架",
+    "features": ["即時程式碼補全", "自然語言轉程式碼", "多檔案上下文理解", "Chat 互動模式", "CLI 指令建議"],
+    "pricing": {
+      "free": true,
+      "freeTier": "個人免費方案（有限額度）",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["每月 2000 次補全", "50 次 chat", "VS Code / JetBrains"]},
+        {"name": "Pro", "priceUSD": 10, "priceTWD": 320, "period": "month", "features": ["無限補全", "無限 chat", "多模型選擇"]},
+        {"name": "Business", "priceUSD": 19, "priceTWD": 608, "period": "month", "features": ["組織管理", "IP 保護", "企業安全", "使用分析"]}
+      ]
+    },
+    "url": "https://github.com/features/copilot",
+    "tags": ["程式", "自動補全", "VS Code", "開發"],
+    "useCases": ["適合：軟體工程師日常開發", "適合：學習新語言的程式初學者", "適合：需要快速原型開發的團隊"],
+    "rating": 4.6,
+    "reviewCount": 2200,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "nameZh": "",
+    "category": "coding",
+    "icon": "▶️",
+    "description": "AI 原生程式編輯器，基於 VS Code 打造，深度整合 AI 於編碼流程中",
+    "features": ["AI 程式碼編輯與生成", "多檔案同時編輯", "Codebase 理解", "內建終端機 AI", "支援多種 AI 模型"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每月 2000 次補全免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["2000 次補全", "50 次 premium 請求"]},
+        {"name": "Pro", "priceUSD": 20, "priceTWD": 640, "period": "month", "features": ["無限補全", "500 次 premium 請求", "無限慢速請求"]},
+        {"name": "Business", "priceUSD": 40, "priceTWD": 1280, "period": "month", "features": ["團隊管理", "集中計費", "管理員控制台", "SAML SSO"]}
+      ]
+    },
+    "url": "https://cursor.com",
+    "tags": ["程式", "編輯器", "VS Code", "開發"],
+    "useCases": ["適合：想要 AI 深度整合的開發者", "適合：需要多檔案重構的資深工程師", "適合：全端開發者"],
+    "rating": 4.7,
+    "reviewCount": 1650,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "replit",
+    "name": "Replit",
+    "nameZh": "",
+    "category": "coding",
+    "icon": "💡",
+    "description": "雲端程式開發平台，內建 AI 助手，瀏覽器即可寫程式、部署應用",
+    "features": ["瀏覽器內開發環境", "AI 程式助手", "一鍵部署", "即時協作", "50+ 程式語言"],
+    "pricing": {
+      "free": true,
+      "freeTier": "基本開發環境免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["基本開發環境", "有限 AI 功能"]},
+        {"name": "Core", "priceUSD": 25, "priceTWD": 800, "period": "month", "features": ["進階 AI 助手", "更多運算資源", "私人專案", "自訂網域"]}
+      ]
+    },
+    "url": "https://replit.com",
+    "tags": ["程式", "雲端", "部署", "協作"],
+    "useCases": ["適合：程式初學者快速上手", "適合：快速原型開發", "適合：不想設定本機環境的開發者"],
+    "rating": 4.2,
+    "reviewCount": 1200,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "nameZh": "",
+    "category": "coding",
+    "icon": "🔧",
+    "description": "Anthropic 推出的 AI 程式終端工具，直接在 CLI 中進行程式碼理解、編輯與重構",
+    "features": ["終端機 AI 程式助手", "大型 codebase 理解", "多檔案編輯與重構", "Git 整合", "自動化測試與除錯"],
+    "pricing": {
+      "free": false,
+      "freeTier": "包含在 Claude Max 方案中",
+      "plans": [
+        {"name": "Max（via Claude）", "priceUSD": 100, "priceTWD": 3200, "period": "month", "features": ["Claude Code 完整功能", "Claude 所有功能", "最高使用額度"]},
+        {"name": "API 用量制", "priceUSD": 0, "priceTWD": 0, "period": "usage", "features": ["按 token 計費", "無月費綁定", "彈性使用"]}
+      ]
+    },
+    "url": "https://docs.anthropic.com/en/docs/claude-code",
+    "tags": ["程式", "CLI", "終端機", "重構"],
+    "useCases": ["適合：資深工程師大型專案重構", "適合：需要深度 codebase 理解的開發者", "適合：偏好終端機工作流程的工程師"],
+    "rating": 4.7,
+    "reviewCount": 820,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "gamma",
+    "name": "Gamma",
+    "nameZh": "",
+    "category": "productivity",
+    "icon": "📊",
+    "description": "AI 簡報生成工具，輸入主題即可自動生成美觀簡報，支援多種版型與互動元素",
+    "features": ["AI 一鍵生成簡報", "多種專業版型", "互動式卡片", "嵌入影片與網頁", "團隊協作"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每月 400 credits 免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["400 credits/月", "Gamma 浮水印"]},
+        {"name": "Plus", "priceUSD": 10, "priceTWD": 320, "period": "month", "features": ["無限 AI 功能", "無浮水印", "自訂字型"]},
+        {"name": "Pro", "priceUSD": 20, "priceTWD": 640, "period": "month", "features": ["進階分析", "優先支援", "自訂品牌", "PDF 匯出"]}
+      ]
+    },
+    "url": "https://gamma.app",
+    "tags": ["簡報", "文件", "效率", "設計"],
+    "useCases": ["適合：需要快速產出簡報的商務人士", "適合：學生製作報告", "適合：不擅長設計的工作者"],
+    "rating": 4.5,
+    "reviewCount": 1100,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "beautiful-ai",
+    "name": "Beautiful.ai",
+    "nameZh": "",
+    "category": "productivity",
+    "icon": "🌟",
+    "description": "AI 智慧簡報設計工具，自動調整排版與設計，讓每頁都美觀專業",
+    "features": ["智慧排版引擎", "100+ 專業範本", "AI 內容建議", "團隊品牌設定", "動畫與轉場"],
+    "pricing": {
+      "free": true,
+      "freeTier": "基本功能免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["基本範本", "Beautiful.ai 浮水印"]},
+        {"name": "Pro", "priceUSD": 12, "priceTWD": 384, "period": "month", "features": ["所有範本", "無浮水印", "PPT 匯出", "桌面應用"]}
+      ]
+    },
+    "url": "https://www.beautiful.ai",
+    "tags": ["簡報", "設計", "排版", "效率"],
+    "useCases": ["適合：經常做簡報的商務人士", "適合：新創團隊 Pitch Deck", "適合：行銷提案與報告"],
+    "rating": 4.3,
+    "reviewCount": 780,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "tome",
+    "name": "Tome",
+    "nameZh": "",
+    "category": "productivity",
+    "icon": "📖",
+    "description": "AI 故事簡報工具，一句話生成完整簡報敘事，內建 AI 圖片與排版",
+    "features": ["AI 一鍵生成簡報", "內建 AI 圖片生成", "互動式頁面", "嵌入多媒體", "數據視覺化"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每月 500 credits 免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["500 credits/月", "基本功能", "Tome 浮水印"]},
+        {"name": "Pro", "priceUSD": 16, "priceTWD": 512, "period": "month", "features": ["無限 AI 功能", "無浮水印", "自訂品牌", "分析功能"]}
+      ]
+    },
+    "url": "https://tome.app",
+    "tags": ["簡報", "敘事", "AI 圖片", "效率"],
+    "useCases": ["適合：需要視覺敘事的簡報者", "適合：快速產出概念提案", "適合：遠端簡報與分享"],
+    "rating": 4.2,
+    "reviewCount": 650,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "you-com",
+    "name": "You.com",
+    "nameZh": "",
+    "category": "search",
+    "icon": "🔎",
+    "description": "AI 搜尋引擎，結合多個 AI 模型與網路搜尋，提供個人化搜尋體驗",
+    "features": ["多模型 AI 搜尋", "個人化搜尋結果", "程式碼搜尋模式", "圖片生成", "隱私保護"],
+    "pricing": {
+      "free": true,
+      "freeTier": "基本搜尋免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["基本 AI 搜尋", "有限進階功能"]},
+        {"name": "Pro", "priceUSD": 15, "priceTWD": 480, "period": "month", "features": ["無限進階搜尋", "多模型切換", "圖片生成", "優先存取"]}
+      ]
+    },
+    "url": "https://you.com",
+    "tags": ["搜尋", "AI", "隱私", "多模型"],
+    "useCases": ["適合：重視隱私的搜尋使用者", "適合：開發者搜尋技術資訊", "適合：需要多源整合搜尋的研究者"],
+    "rating": 4.1,
+    "reviewCount": 580,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "consensus",
+    "name": "Consensus",
+    "nameZh": "",
+    "category": "search",
+    "icon": "🔬",
+    "description": "AI 學術搜尋引擎，專門搜尋學術論文，用 AI 摘要研究結論，適合研究者",
+    "features": ["學術論文搜尋", "AI 研究摘要", "共識分析（Consensus Meter）", "引用格式匯出", "研究趨勢分析"],
+    "pricing": {
+      "free": true,
+      "freeTier": "每月有限搜尋免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["基本搜尋", "有限 AI 摘要"]},
+        {"name": "Premium", "priceUSD": 7, "priceTWD": 224, "period": "month", "features": ["無限 AI 摘要", "進階篩選", "書單功能", "GPT-4 分析"]}
+      ]
+    },
+    "url": "https://consensus.app",
+    "tags": ["學術", "搜尋", "論文", "研究"],
+    "useCases": ["適合：碩博士生文獻回顧", "適合：研究人員快速掌握領域趨勢", "適合：需要學術佐證的內容創作者"],
+    "rating": 4.4,
+    "reviewCount": 520,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "figma-ai",
+    "name": "Figma AI",
+    "nameZh": "",
+    "category": "design",
+    "icon": "🎨",
+    "description": "Figma 內建 AI 功能，自動生成 UI 設計、圖片填充、文案替換，加速設計流程",
+    "features": ["AI 自動生成 UI 元件", "智慧圖片填充", "AI 文案替換", "自動排版建議", "設計系統整合"],
+    "pricing": {
+      "free": false,
+      "freeTier": "包含在 Figma 付費方案中",
+      "plans": [
+        {"name": "Professional", "priceUSD": 15, "priceTWD": 480, "period": "month", "features": ["Figma AI 所有功能", "無限專案", "團隊函式庫", "進階原型"]}
+      ]
+    },
+    "url": "https://www.figma.com/ai",
+    "tags": ["設計", "UI", "UX", "原型"],
+    "useCases": ["適合：UI/UX 設計師", "適合：產品團隊原型製作", "適合：設計系統維護者"],
+    "rating": 4.5,
+    "reviewCount": 920,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "looka",
+    "name": "Looka",
+    "nameZh": "",
+    "category": "design",
+    "icon": "💎",
+    "description": "AI Logo 設計平台，輸入品牌資訊即可生成專業 Logo，並延伸品牌識別設計",
+    "features": ["AI Logo 生成", "品牌識別套件", "名片與社群素材", "SVG 向量檔匯出", "無限修改"],
+    "pricing": {
+      "free": true,
+      "freeTier": "免費設計，購買時付費",
+      "plans": [
+        {"name": "Basic Logo", "priceUSD": 20, "priceTWD": 640, "period": "one-time", "features": ["1 個 Logo 檔案", "PNG 格式"]},
+        {"name": "Brand Kit", "priceUSD": 96, "priceTWD": 3072, "period": "year", "features": ["Logo 所有格式", "品牌指南", "名片設計", "社群素材"]}
+      ]
+    },
+    "url": "https://looka.com",
+    "tags": ["Logo", "品牌", "設計", "創業"],
+    "useCases": ["適合：新創公司設計品牌識別", "適合：小型企業快速取得 Logo", "適合：個人品牌建立"],
+    "rating": 4.1,
+    "reviewCount": 650,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "duolingo-max",
+    "name": "Duolingo Max",
+    "nameZh": "",
+    "category": "education",
+    "icon": "🦉",
+    "description": "Duolingo 進階版搭載 AI 功能，提供角色扮演對話練習與 AI 解題教學",
+    "features": ["AI 角色扮演對話", "AI 解題說明", "40+ 語言課程", "遊戲化學習機制", "個人化學習路徑"],
+    "pricing": {
+      "free": true,
+      "freeTier": "基本語言課程免費（含廣告）",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["基本課程", "含廣告", "有限愛心"]},
+        {"name": "Super", "priceUSD": 7, "priceTWD": 224, "period": "month", "features": ["無廣告", "無限愛心", "進度測驗"]},
+        {"name": "Max", "priceUSD": 14, "priceTWD": 448, "period": "month", "features": ["AI 角色扮演", "AI 解題說明", "Super 所有功能"]}
+      ]
+    },
+    "url": "https://www.duolingo.com",
+    "tags": ["語言學習", "教育", "AI 家教", "遊戲化"],
+    "useCases": ["適合：想學新語言的初學者", "適合：需要口說練習的語言學習者", "適合：喜歡遊戲化學習的使用者"],
+    "rating": 4.6,
+    "reviewCount": 3200,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "khanmigo",
+    "name": "Khanmigo",
+    "nameZh": "",
+    "category": "education",
+    "icon": "🎓",
+    "description": "Khan Academy 推出的 AI 家教，引導式教學而非直接給答案，覆蓋數學到程式設計",
+    "features": ["引導式 AI 家教", "數學步驟解題", "程式設計教學", "SAT 考試準備", "教師輔助工具"],
+    "pricing": {
+      "free": true,
+      "freeTier": "免費使用（公益計畫）",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["AI 家教功能", "所有科目", "免費（公益贊助）"]}
+      ]
+    },
+    "url": "https://www.khanacademy.org/khan-labs",
+    "tags": ["教育", "家教", "數學", "免費"],
+    "useCases": ["適合：國高中生數理學習", "適合：程式設計入門學習者", "適合：教師課堂輔助工具"],
+    "rating": 4.5,
+    "reviewCount": 750,
+    "updatedAt": "2026-03-22"
+  },
+  {
+    "id": "quizlet-ai",
+    "name": "Quizlet AI",
+    "nameZh": "",
+    "category": "education",
+    "icon": "📇",
+    "description": "AI 強化學習卡片平台，自動生成學習卡、模擬測驗，幫助高效記憶",
+    "features": ["AI 自動生成學習卡", "AI 模擬測驗", "智慧學習排程", "筆記轉學習卡", "多種學習模式"],
+    "pricing": {
+      "free": true,
+      "freeTier": "基本學習卡功能免費",
+      "plans": [
+        {"name": "Free", "priceUSD": 0, "priceTWD": 0, "period": "month", "features": ["基本學習卡", "有限 AI 功能"]},
+        {"name": "Plus", "priceUSD": 8, "priceTWD": 256, "period": "month", "features": ["無限 AI 生成", "進階學習模式", "無廣告", "離線存取"]}
+      ]
+    },
+    "url": "https://quizlet.com",
+    "tags": ["學習", "記憶", "考試", "學習卡"],
+    "useCases": ["適合：準備考試的學生", "適合：需要大量記憶的學習者", "適合：語言學習詞彙記憶"],
+    "rating": 4.3,
+    "reviewCount": 1800,
+    "updatedAt": "2026-03-22"
+  }
+]

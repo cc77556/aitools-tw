@@ -1,0 +1,12 @@
+[
+  {"id": "chatbot", "name": "AI 對話", "icon": "💬", "color": "#3B82F6", "description": "ChatGPT、Claude 等對話式 AI 助手"},
+  {"id": "image", "name": "AI 繪圖", "icon": "🎨", "color": "#8B5CF6", "description": "Midjourney、DALL-E 等圖片生成工具"},
+  {"id": "writing", "name": "AI 寫作", "icon": "✍️", "color": "#EC4899", "description": "文案、部落格、社群貼文生成"},
+  {"id": "video", "name": "AI 影片", "icon": "🎬", "color": "#EF4444", "description": "影片生成、剪輯、字幕"},
+  {"id": "audio", "name": "AI 音訊", "icon": "🎵", "color": "#F59E0B", "description": "語音合成、音樂生成、轉錄"},
+  {"id": "coding", "name": "AI 程式", "icon": "💻", "color": "#10B981", "description": "程式碼生成、Debug、自動化"},
+  {"id": "productivity", "name": "AI 效率", "icon": "⚡", "color": "#06B6D4", "description": "簡報、試算表、會議摘要"},
+  {"id": "design", "name": "AI 設計", "icon": "🎯", "color": "#F97316", "description": "UI 設計、Logo、素材生成"},
+  {"id": "search", "name": "AI 搜尋", "icon": "🔍", "color": "#6366F1", "description": "智慧搜尋、研究助手"},
+  {"id": "education", "name": "AI 學習", "icon": "📚", "color": "#14B8A6", "description": "語言學習、家教、課程生成"}
+]
