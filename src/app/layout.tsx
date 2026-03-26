@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from "next";
 import { siteConfig } from "@/data/config";
 import Header from "@/components/Header";
@@ -52,10 +53,12 @@ export default function RootLayout({
             `,
           }}
         />
-              <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J3QL25L9N"></script>
-        <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3J3QL25L9N");` }} />
-      </head>
+</head>
       <body className="flex min-h-screen flex-col font-sans antialiased">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-3J3QL25L9N" strategy="afterInteractive" />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-3J3QL25L9N");`}
+        </Script>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
